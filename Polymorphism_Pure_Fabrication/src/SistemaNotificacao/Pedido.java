@@ -15,10 +15,12 @@ public class Pedido {
  this.status = "PENDENTE";
  this.clienteEmail = email;
  this.clienteTelefone = telefone;
+ 
  }
- public String getStatus() { return status; }
+public String getStatus() { return status; }
  public String getClienteEmail() { return clienteEmail; }
  public String getClienteTelefone() { return clienteTelefone; }
+
  // O Pedido apenas muda seu estado. A notificação é delegada externamente.
  public void setStatus(String status) {
  this.status = status;
